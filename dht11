@@ -1,0 +1,5 @@
+#!/usr/bin/env raku
+
+use DHT11;
+
+# vim: ft=raku
