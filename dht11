@@ -1,5 +1,16 @@
 #!/usr/bin/env raku
 
-use DHT11;
+use RPi::DHT11;
+
+sub MAIN() {
+    my $dht = RPi::DHT11.new(pin => 0);
+
+    react {
+        whenever $dht -> $reading {
+            say sprintf "{ DateTime.now.Str }: Humidity is %.2f %%, \t Temperature is %.2f *C", $reading.humidity, $reading.temperature;
+        }
+    }
+}
+
 
 # vim: ft=raku

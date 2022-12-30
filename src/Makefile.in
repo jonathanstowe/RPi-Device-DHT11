@@ -1,0 +1,7 @@
+all: %DESTDIR%/%dht%
+
+%DESTDIR%/%dht%: dht%O%
+	%LD% %LDSHARED% %LDFLAGS% %LIBS% -lwiringPi %LDOUT%%DESTDIR%/%dht% dht%O% -lwiringPi
+
+dht%O%: dht.c
+	%CC% -c %CCSHARED% %CCFLAGS% %CCOUT% dht%O% dht.c 
