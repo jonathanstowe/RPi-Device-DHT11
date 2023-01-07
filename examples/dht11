@@ -1,9 +1,9 @@
 #!/usr/bin/env raku
 
-use RPi::DHT11;
+use RPi::Device::DHT11;
 
 sub MAIN() {
-    my $dht = RPi::DHT11.new(pin => 0);
+    my $dht = RPi::Device::DHT11.new(pin => 0);
 
     react {
         whenever $dht -> $reading {

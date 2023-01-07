@@ -1,6 +1,4 @@
-#!/usr/bin/env raku
-
-class RPi::DHT11 {
+class RPi::Device::DHT11 {
 
     use NativeCall;
 
