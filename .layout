@@ -1,0 +1,110 @@
+{
+  "type": "layout",
+  "children": [
+    {
+      "type": "file",
+      "name": "META6.json"
+    },
+    {
+      "type": "file",
+      "name": "Changes"
+    },
+    {
+      "children": [
+        {
+          "purpose": null,
+          "name": "hardware",
+          "children": [
+            {
+              "name": "dht11.fzz",
+              "type": "file"
+            },
+            {
+              "name": "dht11.png",
+              "type": "file"
+            }
+          ],
+          "type": "directory"
+        },
+        {
+          "name": "dht11",
+          "type": "file"
+        }
+      ],
+      "purpose": null,
+      "type": "directory",
+      "name": "examples"
+    },
+    {
+      "type": "file",
+      "name": "LICENCE"
+    },
+    {
+      "name": "t",
+      "children": [
+        {
+          "type": "file",
+          "name": "00200-use.t"
+        },
+        {
+          "name": "00100-meta.t",
+          "type": "file"
+        },
+        {
+          "type": "file",
+          "name": "00300-basic.t"
+        }
+      ],
+      "type": "directory",
+      "purpose": null
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "type": "directory",
+              "purpose": null,
+              "children": [
+                {
+                  "name": "DHT11.rakumod",
+                  "type": "file"
+                }
+              ],
+              "name": "Device"
+            }
+          ],
+          "type": "directory",
+          "name": "RPi",
+          "purpose": null
+        }
+      ],
+      "type": "directory",
+      "purpose": null,
+      "name": "lib"
+    },
+    {
+      "purpose": null,
+      "type": "directory",
+      "name": "src",
+      "children": [
+        {
+          "type": "file",
+          "name": "dht.c"
+        },
+        {
+          "name": "Makefile.in",
+          "type": "file"
+        },
+        {
+          "type": "file",
+          "name": "DHT.h"
+        }
+      ]
+    },
+    {
+      "name": "README.md",
+      "type": "file"
+    }
+  ]
+}

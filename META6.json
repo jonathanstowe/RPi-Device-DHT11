@@ -3,17 +3,16 @@
   "authors": [
     "Jonathan Stowe <jns+git@gellyfish.co.uk>"
   ],
-  "build-depends": [
-  ],
   "support": {
-    "bugtracker": "https://github.com/jonathanstowe/RPi-DHT11/issues",
-    "source": "git://github.com/jonathanstowe/RPi-DHT11.git"
+    "bugtracker": "https://github.com/jonathanstowe/RPi-Device-DHT11/issues",
+    "source": "git://github.com/jonathanstowe/RPi-Device-DHT11.git"
   },
   "source-url": "git://github.com/jonathanstowe/RPi-DHT11.git",
-  "description": "Serial Peripheral Interface (DHT11) on the Raspberry Pi",
+  "description": "Interace for the DHT11 temperature/humidity sensor on the Raspberry Pi",
   "tags": [
     "RPi",
     "Raspberry Pi",
+    "Sensor",
     "DHT11"
   ],
   "resources": [
@@ -22,9 +21,9 @@
   "version": "0.0.1",
   "raku": "6.*",
   "provides": {
-    "RPi::DHT11": "lib/RPi/DHT11.rakumod"
+    "RPi::Device::DHT11": "lib/RPi/Device/DHT11.rakumod"
   },
-  "name": "RPi::DHT11",
+  "name": "RPi::Device::DHT11",
   "auth": "zef:jonathanstowe",
   "meta-version": "1",
   "test-depends": [
@@ -32,13 +31,17 @@
   "depends": {
     "runtime": {
       "requires": [
-        "NativeHelpers::Array"
       ]
     },
     "build": {
       "requires": [
         "Distribution::Builder::MakeFromJSON:ver<0.6+>"
       ]
+    },
+    "test": {
+       "requires" : [
+          "Test::Mock"
+       ]
     }
   },
   "builder": "Distribution::Builder::MakeFromJSON",

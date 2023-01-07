@@ -1,3 +1,8 @@
+/*
+ * This is based on the https://github.com/Freenove/Freenove_Ultimate_Starter_Kit_for_Raspberry_Pi/blob/master/Code/C_Code/21.1.1_DHT11/DHT.cpp
+ * which is licensed as CC BY-NC-SA 3.0 ( https://github.com/Freenove/Freenove_Ultimate_Starter_Kit_for_Raspberry_Pi/blob/master/LICENSE.txt )
+ * It has been modified to work as a plain C library rather than a C++ class
+ */
 /**********************************************************************
 * Filename    : DHT.hpp
 * Description : DHT Temperature & Humidity Sensor library for Raspberry.
